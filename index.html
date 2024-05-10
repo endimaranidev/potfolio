@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css/normalize.css">
+    <link rel="stylesheet" href="./static/styles/style.css">
+    <title>Portfólio</title>
+</head>
+<body>
+
+    <!-- NAVIGATION BAR -->
+    <header class="navbar">
+        <p class="navbar__name"><a href="#profile">Endí Marani</a></p>
+        <nav class="navbar__content">
+            <a class="navbar__content__link" data-lang="aboutme" href="#aboutme">Sobre mim</a>
+            <a class="navbar__content__link" data-lang="skills" href="#skills">Skills</a>
+            <a class="navbar__content__link" data-lang="hobbies" href="#hobbies">Hobbies</a>
+            <a class="navbar__content__link" data-lang="education" href="#education">Formação Acadêmica</a>
+            <a class="navbar__content__link" data-lang="projects" href="#projects">Projetos</a>
+            <a class="navbar__content__link" data-lang="contact" href="#contact">Contato</a>
+        </nav>
+
+        <div class="navbar__buttons">
+            <button type="button" class="button btn-portuguese">
+                <img class="navbar__buttons__brazil__icon" src="./static/images/brazil-flag-icon.svg" alt="bandeira do brasil">
+                <span data-lang="portuguese">Português</span>
+            </button>
+            <button type="button" class="button btn-english">
+                <img class="navbar__buttons__usa__icon" src="./static/images/usa-flag-icon.svg" alt="bandeira dos estados unidos">
+                <span data-lang="english">Inglês</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- PRPOFILE PRESENTATION -->
+    <main class="profile__section" id="profile">
+        <section id="presentation" class="profile__section__presentation">
+            <div class="profile__section__presentation__content">
+                <!-- PRESENTATION TEXT -->
+                <div class="profile__section__presentation__content__title">
+                    <h1 class="profile__section__presentation__content__title__text" data-lang="title">Olá, meu nome é Endí Marani!</h1>
+
+                    <p class="profile__section__presentation__content__paragraph__text" data-lang="intro">Atualmente sou estudante da Alura em parceria com a Oracle através do programa ONE - Oracle Next Education, atualmente seguindo a trilha de especialização em Front-End.</p>
+                </div>
+
+                <!-- SOCIAL NETWORK -->
+                <div class="profile__section__presentation__content__socialmedia">
+                    <a href="https://github.com/endimaranidev" target="_blank" class="profile__section__presentation__content__links">
+                        <img class="profile__section__presentation__content__links__img" src="./static/images/github-icon.svg" alt="logo do github">
+                        <img class="profile__section__presentation__content__links__img__animated" src="./static/images/github-color.gif" alt="icone animado do github"><span class="profile__section__presentation__content__name">Github</span>
+                    </a>
+                
+                    <a href="https://www.linkedin.com/in/endimarani/" target="_blank" class="profile__section__presentation__content__links">
+                        <img class="profile__section__presentation__content__links__img" src="./static/images/linkedin-icon.svg" alt="logo do linkedin">
+                        <img class="profile__section__presentation__content__links__img__animated" src="./static/images/linkedin-color.gif" alt=""><span class="profile__section__presentation__content__name">Linkedin</span>
+                    </a>
+                
+                    <a href="https://www.instagram.com/endimarani" target="_blank" class="profile__section__presentation__content__links">
+                        <img class="profile__section__presentation__content__links__img" src="./static/images/insta-icon.svg" alt="logo do instagram">
+                        <img class="profile__section__presentation__content__links__img__animated" src="./static/images/instagram-color.gif" alt=""><span class="profile__section__presentation__content__name">Instagram</span>
+                    </a>
+                
+                    <a href="" class="profile__section__presentation__content__links">
+                        <img class="profile__section__presentation__content__links__img" src="./static/images/curriculum-icon.svg" alt="logo de arquivo pdf">
+                        <img class="profile__section__presentation__content__links__img__animated" src="./static/images/pdf-color.gif" alt=""><span class="profile__section__presentation__content__name">Currículo</span>
+                    </a>
+                </div>
+            </div>
+            <!-- PROFILE PHOTO -->
+            <img class="profile__section__presentation__img" alt="Foto pessoal" src="./static/images/profile-photo.jpg">
+        </section>
+
+        <!-- ABOUT ME -->
+        <section id="aboutme" class="profile__section__aboutme">
+            <div class="profile__section__aboutme__content">
+                <h2 class="profile__section__aboutme__content__title" data-lang="aboutme">Sobre Mim</h2>
+                <p class="profile__section__aboutme__content__text" data-lang="aboutme__text">Sou natural de Aracaju-SE, tenho 32 anos e sou formado em direito. Como não estava me encontrando profissionalmente na área, resolvi fazer um curso de lógica de programação e comecei a me interessar pela área de desenvolvimento de sistemas. </p>
+                <p class="profile__section__aboutme__content__text" data-lang="aboutme__text2">Atualmente, além de ser participante da Trilha Front-End da Alura, também sou aluno de um curso Técnico em Desenvolvimento de Sistemas pelo SENAC/RN e darei início ao curso superior em Análise e Desenvolvimento de Sistemas pela UNIT-SE ainda este ano.</p>
+            </div>
+        </section>
+        
+        <!-- SKILLS -->
+        <section id="skills" class="profile__section__skills">
+
+            <h2 class="profile__section__skills__title">Skills</h2>
+
+            <div class="profile__section__skills__content">
+                <!-- SKILLS HTML -->
+                <div class="profile__section__skills__content__html">
+                    <img class="profile__section__skills__content__html__icon" src="./static/images/html-icon.svg" alt="logo do html5 preto e branco">
+                    <img class="profile__section__skills__content__html__icon__color" src="./static/images/html-icon-color.svg" src="" alt="logo do html5 colorido">
+                    <p class="profile__section__skills__content__html__text">HTML</p>
+                </div>
+                <!-- SKILLS CSS -->
+                <div class="profile__section__skills__content__css">
+                    <img class="profile__section__skills__content__css__icon" src="./static/images/css-icon.svg" alt="logo do css3 preto e branco">
+                    <img class="profile__section__skills__content__css__icon__color" src="./static/images/css-icon-color.svg" src="" alt="logo do html5 colorido">
+                    <p class="profile__section__skills__content__css__text">CSS</p>
+                </div>
+                <!-- SKILLS JAVASCRIPT -->
+                <div class="profile__section__skills__content__javascript">
+                    <img class="profile__section__skills__content__javascript__icon" src="./static/images/javascript-icon.svg" alt="logo do javascript preto e branco">
+                    <img class="profile__section__skills__content__javascript__icon__color" src="./static/images/javascript-icon-color.svg" src="" alt="logo do javascript colorido">
+                    <p class="profile__section__skills__content__javascript__text">JavaScript</p>
+                </div>
+
+                <!-- SKILLS PYTHON -->
+                <div class="profile__section__skills__content__python">
+                    <img class="profile__section__skills__content__python__icon" src="./static/images/python-icon.svg" alt="logo do python preto e branco">
+                    <img class="profile__section__skills__content__python__icon__color" src="./static/images/python-icon-color.svg" src="" alt="logo do python colorido">
+                    <p class="profile__section__skills__content__python__text">Python</p>
+                </div>
+
+                <!-- SKILLS DJANGO -->
+                <div class="profile__section__skills__content__django">
+                    <img class="profile__section__skills__content__django__icon" src="./static/images/django-icon.svg" alt="logo do django preto e branco">
+                    <img class="profile__section__skills__content__django__icon__color" src="./static/images/django-icon-color.svg" src="" alt="logo do django colorido">
+                    <p class="profile__section__skills__content__django__text">Django</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- HOBBIES -->
+        <section id="hobbies" class="profile__section__hobbies">
+
+            <h2 class="profile__section__hobbies__title">Hobbies</h2>
+
+            <div class="profile__section__hobbies__content">
+                <!-- HOBBIES GAMING -->
+                <div class="profile__section__hobbies__content__gaming">
+                    <img class="profile__section__hobbies__content__gaming__icon" src="./static/images/games-icon.svg" alt="controle de videogame em preto e branco">
+                    <p class="profile__section__hobbies__content__gaming__text"data-lang="gaming">Jogar</p>
+                </div>
+
+                <!-- HOBBIES BIKE -->
+                <div class="profile__section__hobbies__content__bike">
+                    <img class="profile__section__hobbies__content__bike__icon" src="./static/images/bike-icon.svg" alt="bicicleta em preto e branco">
+                    <p class="profile__section__hobbies__content__bike__text" data-lang="biking">Pedalar</p>
+                </div>
+
+                <!-- HOBBIES SERIES -->
+                <div class="profile__section__hobbies__content__series">
+                    <img class="profile__section__hobbies__content__series__icon" src="./static/images/tv-icon.svg" alt="televisao em preto e branco">
+                    <p class="profile__section__hobbies__content__series__text" data-lang="series">Assistir Séries</p>
+                </div>
+
+                <!-- HOBBIES ANIMES -->
+                <div class="profile__section__hobbies__content__animes">
+                    <img class="profile__section__hobbies__content__animes__icon" src="./static/images/anime-icon.svg" alt="bicicleta em preto e branco">
+                    <p class="profile__section__hobbies__content__animes__text">Animes</p>
+                </div>
+        </section>
+        
+        <!-- EDUCATION -->
+        <section id="education" class="profile__section__education">
+
+            <h2 class="profile__section__education__title" data-lang="education">Formação Acadêmica</h2>
+
+            <div class="profile__section__education__content">
+
+                <!-- EDUCATION COLLEGE -->
+                <div class="profile__section__education__content__college">
+                    <img class="profile__section__education__content__college__icon" src="https://pos.piodecimo.edu.br/pos/assets/img/logo-piox.jpg" alt="logo da faculdade pio decimo">
+                    <p class="profile__section__education__content__college__text" data-lang="degree">Bacharelado em Direito</p>
+                    <p class="profile__section__education__content__college__text__subtitle" data-lang="college">2019 - Faculdade Pio X</p>
+                </div>
+
+                <!-- EDUCATION ALURA -->
+                <div class="profile__section__education__content__alura">
+                    <img class="profile__section__education__content__alura__icon" src="./static/images/logo-alura.svg" alt="logo da faculdade pio decimo">
+                    <p class="profile__section__education__content__alura__text" data-lang="oracle">Formação Oracle + Alura - Especialização Front End</p> 
+                    <p class="profile__section__education__content__alura__text__subtitle" data-lang="ongoing">Em andamento - Alura</p>
+                </div>
+
+                <!-- EDUCATION SENAC -->
+                <div class="profile__section__education__content__senac">
+                    <img class="profile__section__education__content__senac__icon" src="./static/images/senac_logo.svg" alt="logo do senac">
+                    <p class="profile__section__education__content__senac__text" data-lang="technical">Técnico em Desenvolvimento de Sistemas</p> 
+                    <p class="profile__section__education__content__senac__text__subtitle" data-lang="senac">Em andamento - SENAC/RN</p>
+                </div>
+
+        </section>
+        
+        <!-- PROJECTS -->
+        <section id="projects" class="profile__section__projects">
+            <h2 class="profile__section__education__title" data-lang="projects">Projetos</h2>
+
+            <div class="profile__section__education__content">
+
+                <!-- PROJECTS CRYPTOGRAPHY -->
+                <div class="profile__section__projects__content__cryptography">
+                    <img class="profile__section__projects__content__cryptography__print" src="./static/images/decodificador.png" alt="imagem do projeto decodificador">
+                    <div class="profile__section__projects__content__cryptography__content">
+                        <p class="profile__section__projects__content__cryptography__title" data-lang="decoder">Decodificador de Texto</p>
+                        <p class="profile__section__projects__content__cryptography__subtitle" data-lang="alura_challenge">Challenge Alura Decodificador</p>
+                        <div class="profile__section__projects__content__cryptography__content__links">
+                            <a class="profile__section__projects__content__cryptography__content__links__repo" href="https://github.com/endimaranidev/alura-challenge" target="_blank" data-lang="repo">Repositório</a>
+                            <a class="profile__section__projects__content__cryptography__content__links__demo" href="https://challenge-decodificador-alura.vercel.app/" target="_blank" data-lang="demo">Ver Demo</a>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="profile__section__contact">
+            <img class="profile__section__contact__image" src="static/images/foto-contato.webp" alt="foto de ...">
+
+            <form class="floating-label-form" onsubmit="sendEmail(); return false;">
+                <h2 class="profile__section__education__title" data-lang="contact">Contato</h2>
+                <p class="profile__section__education__title__subtitle"
+                data-lang="contact_text">Quer entrar em contato? Preencha o formulário abaixo!</p>
+
+                <div class="form-field">
+                    <input type="text" id="name" placeholder=" " required>
+                    <label for="name" data-lang="name">Nome</label>
+                </div>
+                <div class="form-field">
+                    <input type="email" id="email" placeholder=" " required>
+                    <label for="email">Email</label>
+                </div>
+                <div class="form-field">
+                    <input type="text" id="subject" placeholder=" " required>
+                    <label for="subject" data-lang="subject">Assunto</label>
+                </div>
+                <div class="form-field">
+                    <textarea id="message" placeholder=" " rows="4" required></textarea>
+            <label for="message" data-lang="message">Mensagem</label>
+                </div>
+                <button type="submit" data-lang="send">Enviar</button>
+            </form>
+
+        </section>
+    </main>
+
+    <footer class="profile__footer">
+        <p>Desenvolvido por Endí Marani</p>
+        <p>2024</p>
+    </footer>
+
+</body>
+<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script src="./static/scripts/scripts.js"></script>
+</html>

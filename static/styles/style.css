@@ -1,0 +1,827 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    /* BACKGROUND */
+    --background-color-navbar: #011627;
+    --background-color-profile: #fdfffc;
+    --background-color-aboutme: #fdfffc;
+    --background-color-skills: #fdfffc;
+    --background-color-hobbies: #fdfffc;
+    --background-color-education: #fdfffc;
+    --background-color-projects: #fdfffc;
+    --background-color-contact: #fdfffc;
+    --background-color-footer: #fdfffc;
+
+    /* BUTTONS */
+    --background-color-socialnet: #a9bcd0;
+
+    /* HOVERS */
+    --hover-navbar: #2ec4b6;
+
+    /* FONT */
+    --font-family: "Raleway", sans-serif;
+    
+    /* FONT COLOR*/
+    --font-color-navbar: #f4fff8;
+
+    /* NAVBAR*/
+    --navbar-height: 60px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: inherit;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    font-family: var(--font-family);
+    font-weight: 600;
+}
+
+/* HEADER */
+.navbar {
+    width: 100%;
+    height: var(--navbar-height);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    background-color: var(--background-color-navbar);
+    flex-wrap: nowrap;
+    overflow: hidden;
+    position: fixed;
+    z-index: 1000;
+}
+
+.navbar__name {
+    padding-left: 15%;
+    white-space: nowrap;
+    font-size: 1.5rem;
+    color: var(--font-color-navbar);
+}
+
+.navbar__content {
+    display: flex;
+    gap: 10px;
+}
+
+.navbar__content__link {
+    border: 7px solid transparent;
+    border-radius: 10px;
+    color: var(--font-color-navbar);
+}
+
+.navbar__content__link:hover {
+    background-color: var(--hover-navbar);
+    border-radius: 10px;
+    transition: background-color 0.5s ease, border-color 0.5s ease, border-radius 0.5s ease;
+}
+
+.navbar__buttons {
+    display: flex;
+    padding: 0.5% 1% 0 0;
+    gap: 15px;
+    font-size: 0.7rem;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    width: 100px;
+    gap: 5%;
+    color: var(--font-color-navbar);
+    background-color: var(--background-color-navbar);
+    font-weight: bold;
+}
+
+.btn-portuguese:hover {
+    background: linear-gradient(to right, yellow 30%, green);
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+.btn-english:hover {
+    background: linear-gradient(to right, rgb(255, 66, 66), rgb(89, 89, 255));
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+.navbar__buttons__brazil__icon,
+.navbar__buttons__usa__icon {
+    width: 30px;
+    height: 30px;
+}
+
+/* MAIN CONTENT */
+
+.profile__section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-top: 70px;
+    background-color: var(--background-color-profile);
+}
+
+.profile__section__presentation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    gap: 20px;
+    padding: 2%;
+}
+
+.profile__section__presentation__content {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+.profile__section__presentation__content__socialmedia {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.profile__section__presentation__content__links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+    padding: 1%;
+    gap: 5px;
+    border: outset 0.5px #ccc;
+    border-radius: 10px;
+}
+
+.profile__section__presentation__content__links__img__animated {
+    width: 25%;
+    display: none;
+}
+
+.profile__section__presentation__content__links:hover {
+    transform: scale(1.2);
+    box-shadow: 0 5px 15px rgba(1, 22, 39);
+}
+
+.profile__section__presentation__content__links:hover
+.profile__section__presentation__content__links__img {
+    display: none;
+}
+
+.profile__section__presentation__content__name {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap; 
+    max-width: 0;
+    transition: max-width 0.5s steps(10, end);
+    visibility: hidden;
+}
+
+.profile__section__presentation__content__links:hover .profile__section__presentation__content__links__img__animated {
+    display: block;
+}
+
+.profile__section__presentation__content__links:hover .profile__section__presentation__content__name {
+    max-width: 100%;
+    visibility: visible;
+    transition-duration: 1s;
+}
+
+.profile__section__presentation__content__links__img {
+    width: 30px;
+}
+
+.profile__section__presentation__img {
+    width: 350px;
+    height: 350px;
+    border-radius: 100%;
+    border: solid 0.5px;
+    box-shadow: 0px 5px 5px 5px rgba(0, 0, 0, 0.25);
+}
+
+/* ABOUT ME */
+
+.profile__section__aboutme {
+    display: flex;
+    text-align: justify;
+    gap: 20px;
+    padding: 2%;
+    background-color: var(--background-color-aboutme);
+    box-shadow: 0px 5px 5px 5px rgba(0, 0, 0, 0.25);
+    margin: 1%;
+}
+
+.profile__section__aboutme__content {
+    width: 60%;
+    margin-left: 9%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* SKILLS */
+
+.profile__section__skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+    background-color: var(--background-color-skills);
+    box-shadow: 0px 5px 5px 5px rgba(0, 0, 0, 0.25);
+    margin: 1%;
+}
+
+.profile__section__skills__content {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+/* SKILLS HTML */
+
+.profile__section__skills__content__html {
+    position: relative;
+    width: 90px;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile__section__skills__content__html__icon,
+.profile__section__skills__content__html__icon__color {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.3s ease-in-out, transform 0.4s ease-in-out;
+    transform-origin: center;
+    backface-visibility: hidden;
+}
+
+.profile__section__skills__content__html__icon__color {
+    opacity: 0;
+}
+
+.profile__section__skills__content__html:hover .profile__section__skills__content__html__icon {
+    transform: rotateY(360deg);
+    opacity: 0;
+}
+
+.profile__section__skills__content__html__text {
+    align-self: flex-end;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.profile__section__skills__content__html:hover .profile__section__skills__content__html__icon__color {
+    opacity: 1;
+    transform: rotateY(720deg);
+}
+
+/* SKILLS CSS */
+
+.profile__section__skills__content__css {
+    position: relative;
+    width: 90px;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile__section__skills__content__css__icon,
+.profile__section__skills__content__css__icon__color {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.3s ease-in-out, transform 0.4s ease-in-out;
+    transform-origin: center;
+    backface-visibility: hidden;
+}
+
+.profile__section__skills__content__css__icon__color {
+    opacity: 0;
+}
+
+.profile__section__skills__content__css:hover .profile__section__skills__content__css__icon {
+    transform: rotateY(360deg);
+    opacity: 0;
+}
+
+.profile__section__skills__content__css__text {
+    align-self: flex-end;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.profile__section__skills__content__css:hover .profile__section__skills__content__css__icon__color {
+    opacity: 1;
+    transform: rotateY(720deg);
+}
+
+/* SKILLS JAVASCRIPT */
+
+.profile__section__skills__content__javascript {
+    position: relative;
+    width: 90px;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile__section__skills__content__javascript__icon,
+.profile__section__skills__content__javascript__icon__color {
+    width: 80%; /* Tamanho inicial reduzido para ambos */
+    height: 80%; /* Tamanho inicial reduzido para ambos */
+    position: absolute;
+    top: 10%; /* Centralizado verticalmente */
+    left: 10%; /* Centralizado horizontalmente */
+    transition: opacity 0.3s ease-in-out, transform 0.4s ease-in-out, width 0.3s ease, height 0.3s ease; /* Transições suaves para dimensões e opacidade */
+    transform-origin: center;
+    backface-visibility: hidden;
+}
+
+.profile__section__skills__content__javascript__icon__color {
+    opacity: 0;
+}
+
+.profile__section__skills__content__javascript:hover .profile__section__skills__content__javascript__icon {
+    transform: rotateY(360deg);
+    opacity: 0;
+}
+
+.profile__section__skills__content__javascript__text {
+    align-self: flex-end;
+    text-align: center;
+}
+
+.profile__section__skills__content__javascript:hover .profile__section__skills__content__javascript__icon__color {
+    opacity: 1;
+    transform: rotateY(720deg);
+}
+
+/* SKILLS PYTHON */
+
+.profile__section__skills__content__python {
+    position: relative;
+    width: 90px;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile__section__skills__content__python__icon,
+.profile__section__skills__content__python__icon__color {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.3s ease-in-out, transform 0.4s ease-in-out;
+    transform-origin: center;
+    backface-visibility: hidden;
+}
+
+.profile__section__skills__content__python__icon__color {
+    opacity: 0;
+}
+
+.profile__section__skills__content__python:hover .profile__section__skills__content__python__icon {
+    transform: rotateY(360deg);
+    opacity: 0;
+}
+
+.profile__section__skills__content__python__text {
+    align-self: flex-end;
+    text-align: center;
+}
+
+.profile__section__skills__content__python:hover .profile__section__skills__content__python__icon__color {
+    opacity: 1;
+    transform: rotateY(720deg);
+}
+
+/* SKILLS DJANGO */
+
+.profile__section__skills__content__django {
+    position: relative;
+    width: 90px;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile__section__skills__content__django__icon,
+.profile__section__skills__content__django__icon__color {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.3s ease-in-out, transform 0.4s ease-in-out;
+    transform-origin: center;
+    backface-visibility: hidden;
+}
+
+.profile__section__skills__content__django__icon__color {
+    opacity: 0;
+}
+
+.profile__section__skills__content__django:hover .profile__section__skills__content__django__icon {
+    transform: rotateY(360deg);
+    opacity: 0;
+}
+
+.profile__section__skills__content__django__text {
+    align-self: flex-end;
+    text-align: center;
+}
+
+.profile__section__skills__content__django:hover .profile__section__skills__content__django__icon__color {
+    opacity: 1;
+    transform: rotateY(720deg);
+}
+
+/* HOBBIES */
+
+.profile__section__hobbies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+    gap: 20px;
+    background-color: var(--background-color-hobbies);
+    box-shadow: 0px 5px 5px 5px rgba(0, 0, 0, 0.25);
+    margin: 1%;
+}
+
+.profile__section__hobbies__content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* HOBBIES GAMING */
+.profile__section__hobbies__content__gaming {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 10%;
+    gap: 10px;
+}
+
+.profile__section__hobbies__content__gaming__icon {
+    width: 70%;
+    transition: ease 1.5s;
+}
+
+.profile__section__hobbies__content__gaming__icon:hover {
+    width: 100%;
+}
+
+/* HOBBIES BIKE */
+.profile__section__hobbies__content__bike {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 10%;
+}
+
+.profile__section__hobbies__content__bike__icon {
+    width: 80%;
+    transition: ease 1.5s;
+}
+
+.profile__section__hobbies__content__bike__icon:hover {
+    width: 100%;
+}
+
+/* HOBBIES SERIES */
+.profile__section__hobbies__content__series {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 10%;
+    gap: 10px;
+}
+
+.profile__section__hobbies__content__series__icon {
+    width: 80%;
+    transition: ease 1.5s;
+}
+
+.profile__section__hobbies__content__series__icon:hover {
+    width: 100%;
+}
+
+/* HOBBIES ANIMES */
+.profile__section__hobbies__content__animes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 10%;
+}
+
+.profile__section__hobbies__content__animes__icon {
+    width: 70%;
+    transition: ease 1.5s;
+}
+
+.profile__section__hobbies__content__animes__icon:hover {
+    width: 100%;
+}
+
+/* EDUCATION */
+
+.profile__section__education {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+    gap: 20px;
+    background-color: var(--background-color-education);
+    box-shadow: 0px 5px 5px 5px rgba(0, 0, 0, 0.25);
+    margin: 1%;
+}
+
+.profile__section__education__content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-left: 200px;
+}
+
+/* COLLEGE */
+
+.profile__section__education__content__college {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile__section__education__content__college__icon {
+    width: 230px;
+}
+
+.profile__section__education__content__college__text {
+    text-align: start;
+    margin-top: 10px;
+}
+
+.profile__section__education__content__college__text__subtitle {
+    font-size: 0.7rem;
+}
+
+/* ALURA */
+
+.profile__section__education__content__alura {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile__section__education__content__alura__icon{
+    width: 270px;   
+}
+
+.profile__section__education__content__alura__text {
+    margin-top: 10px;
+}
+
+.profile__section__education__content__alura__text__subtitle {
+    font-size: 0.7rem;
+}
+
+/* SENAC */
+
+.profile__section__education__content__senac {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+}
+
+.profile__section__education__content__senac__icon{ 
+    width: 70%;
+    background-color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+.profile__section__education__content__senac__text {
+    text-align: justify;
+}
+
+.profile__section__education__content__senac__text__subtitle {
+    font-size: 0.7rem;
+}
+
+/* PROJECTS */
+
+.profile__section__projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+    gap: 20px;
+    background-color: var(--background-color-projects);
+    box-shadow: 0px 5px 5px 5px rgba(0, 0, 0, 0.25);
+    margin: 1%;
+}
+
+.profile__section__projects__content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* CRYPTOGRAPHY */
+
+.profile__section__projects__content__cryptography {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.profile__section__projects__content__cryptography__print {
+    width: 50%;
+}
+
+.profile__section__projects__content__cryptography__content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.profile__section__projects__content__cryptography__title {
+    font-size: 1.5rem;
+}
+
+.profile__section__projects__content__cryptography__content__links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile__section__projects__content__cryptography__content__links__repo {
+    background-color: white;
+    color: #031927;
+    width: 50%;
+    height: 40px;
+    text-align: center;
+    align-content: center;
+    border-radius: 10px;
+}
+
+.profile__section__projects__content__cryptography__content__links__demo {
+    background-color: #031927;
+    color: white;
+    width: 50%;
+    height: 40px;
+    text-align: center;
+    align-content: center;
+    border-radius: 10px;
+}
+
+.profile__section__projects__content__cryptography__content__links__repo:hover {
+    background-color: #C8E0F4;
+}
+
+.profile__section__projects__content__cryptography__content__links__demo:hover {
+    background-color: #0a3b5a;
+}
+
+/* CONTACT */
+.profile__section__contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+    gap: 20px;
+    background-color: var(--background-color-contact);
+    box-shadow: 0px 5px 5px 5px rgba(0, 0, 0, 0.25);
+    margin: 1%;
+}
+
+.floating-label-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* FORM */
+.profile__section__education__title {
+    margin-bottom: 20px;
+}
+
+.profile__section__education__title__subtitle {
+    margin-bottom: 20px;
+}
+
+.profile__section__contact__image {
+    width: 40%;
+}
+
+.floating-label-form {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+.form-field {
+    width: 100%;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    padding-top: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    resize: none;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    outline: none;
+    border-color: #666;
+}
+
+label {
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    color: #999;
+}
+
+input[type="text"]:focus + label,
+input[type="email"]:focus + label,
+textarea:focus + label,
+input[type="text"]:not(:placeholder-shown) + label,
+input[type="email"]:not(:placeholder-shown) + label,
+textarea:not(:placeholder-shown) + label {
+    top: 5px;
+    padding: 0 5px;
+    font-size: 12px;
+    color: #333;
+}
+
+input[type="text"]:placeholder-shown + label,
+input[type="email"]:placeholder-shown + label,
+textarea::placeholder-shown + label {
+    top: 10px;
+    left: 10px;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.profile__footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-color-footer);
+}
