@@ -2,7 +2,7 @@ const translations = {
     pt: {
         title: "Olá, meu nome é Endí Marani!",
         aboutme: "Sobre Mim",
-        skills: "Skills",
+        skills: "Habilidades",
         hobbies: "Hobbies",
         education: "Formação Acadêmica",
         projects: "Projetos",
@@ -11,6 +11,7 @@ const translations = {
         portuguese: "Português",
         english: "Inglês",
         aboutme__text: "Sou natural de Aracaju-SE, tenho 32 anos e sou formado em direito. Como não estava me encontrando profissionalmente na área, resolvi fazer um curso de lógica de programação e comecei a me interessar pela área de desenvolvimento de sistemas.",
+        aboutme__text1: "Desde criança fui abraçado pela tecnologia. Lembro bem do meu primeiro computador, um windos 98, no qual eu adorava jogar Oddworld: Abe's Oddysee e outros jogos estilo MUGEN, e até então esse sempre foi um dos meus passatempos preferidos. Quando chegou o momento de escolher um futuro profissional, familiares me estimularam bastante a seguir pela área de tecnologia. Porém, na época eu pensava que estaria transformando um passatempo em estudo, e isso faria com que a diversão acabasse. Contudo, hoje vejo na programação um excelente passatempo. Divertido, estressante, estimulante, prazeroso, cansativo, assim como jogar um jogo. E por isso decidi mudar os rumos da carreira para seguir nos estudos de programação.",
         aboutme__text2: "Atualmente, além de ser participante da Trilha Front-End da Alura, também sou aluno de um curso Técnico em Desenvolvimento de Sistemas pelo SENAC/RN e darei início ao curso superior em Análise e Desenvolvimento de Sistemas pela UNIT-SE ainda este ano.",
         gaming: "Jogar",
         biking: "Pedalar",
@@ -44,6 +45,7 @@ const translations = {
         portuguese: "Portuguese",
         english: "English",
         aboutme__text: "I am from Aracaju-SE and I am 32 years old. I have a degree in law school. Since I was not finding my professional path in that field, I decided to take a course in programming logic and began to develop an interest in the area of systems development.",
+        aboutme__text1: "From an early age, I was embraced by technology. I vividly remember my first computer, a Windows 98, on which I loved playing Oddworld: Abe's Oddysee and various MUGEN-style games. Since then, gaming has always been one of my favorite hobbies. When the time came to choose a professional future, my family strongly encouraged me to pursue a career in technology. However, at the time, I thought turning a hobby into a study subject would strip away the fun. Today, however, I see programming as an excellent hobby. It's fun, stressful, stimulating, enjoyable, and exhausting—just like playing a game. That's why I decided to shift my career path and focus on studying programming.",
         aboutme__text2: "Currently, in addition to participating in Alura's Front-End Track, I am also enrolled in a Technical Course in Systems Development at SENAC/RN, and I will start a higher education program in Systems Analysis and Development at UNIT-SE later this year.",
         gaming: "Gaming",
         biking: "Biking",
@@ -128,7 +130,7 @@ document.querySelectorAll('.navbar__content__link').forEach(link => {
         e.preventDefault(); // Previne o comportamento padrão de scroll
         const targetId = this.getAttribute('href');
         const targetSection = document.querySelector(targetId);
-        const offsetTop = targetSection.offsetTop - 60; // Desconta a altura da navbar
+        const offsetTop = targetSection.offsetTop - 80; // Desconta a altura da navbar
         window.scrollTo({
             top: offsetTop,
             behavior: 'smooth'
