@@ -714,7 +714,7 @@ body {
 .profile__section__projects__content__cryptography__content__links__repo {
     background-color: white;
     color: #031927;
-    width: 50%;
+    width: 60%;
     height: 40px;
     text-align: center;
     align-content: center;
@@ -724,11 +724,15 @@ body {
 .profile__section__projects__content__cryptography__content__links__demo {
     background-color: #031927;
     color: white;
-    width: 50%;
+    width: 60%;
     height: 40px;
     text-align: center;
     align-content: center;
     border-radius: 10px;
+}
+
+.padding-english {
+    padding: 5%; /* Ajuste este valor conforme necessário */
 }
 
 .profile__section__projects__content__cryptography__content__links__repo:hover {
@@ -1067,7 +1071,7 @@ button[type="submit"] {
     }
 
     .profile__section__projects__content__cryptography__content p {
-        margin-left: -70px;
+        margin-left: -55px;
     }
 
     .profile__section__projects__content__cryptography__print{
@@ -1078,5 +1082,9 @@ button[type="submit"] {
     .profile__section__contact {
         margin: 5%;
         border-radius: 20px;
+    }
+
+   .profile__section__projects__content__cryptography__content__links__demo {
+        width: 150px;
     }
 }

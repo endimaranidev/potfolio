@@ -61,7 +61,7 @@ const translations = {
         decoder: "Text Encryptor",
         alura_challenge: "Challenge Alura Text Encryptor",
         repo: "Repository",
-        demo: "Demo",
+        demo: "Demonstration",
         contact: "Contact",
         contact_text: "Want to get in touch? Fill out the form below and I'll be in touch.",
         name: "Name",
@@ -73,15 +73,20 @@ const translations = {
 
 function changeLanguage(lang) {
     document.querySelectorAll("[data-lang]").forEach(element => {
-        if (element.tagName !== 'IMG') { // Ignora imagens
-            const key = element.getAttribute("data-lang");
-            if (translations[lang][key]) {
-                element.textContent = translations[lang][key];
+        const key = element.getAttribute("data-lang");
+        if (translations[lang][key]) {
+            element.textContent = translations[lang][key];
+            // Aplica o padding se o idioma for inglês
+            if (lang === 'en' && key === 'demo') {
+                element.classList.add('padding-english');
+            } else {
+                element.classList.remove('padding-english');
             }
         }
     });
-    adjustButtonWidth(); // Chama a função para ajustar a largura dos botões
+    adjustButtonWidth(); // Ajusta a largura dos botões
 }
+
 
 function adjustButtonWidth() {
     document.querySelectorAll(".button").forEach(button => {
